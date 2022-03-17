@@ -1,0 +1,13 @@
+cd api
+    npm install
+    remplacer l'url de la base de donnée mongodb dans le .env
+    yarn start
+    creer un webcast : 
+        ouvrir postman ou insomnia puis lancer en method post:
+            url_serveur/webcast
+
+cd front 
+    npm install
+    remplacer l'url de la base de donnée mongodb dans le .env
+    remplacer le hostname et l'id de webcast dans le .env
+    yarn start

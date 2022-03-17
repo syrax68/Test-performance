@@ -2,7 +2,7 @@ import { useMemo, useEffect, useState } from "react";
 import { usePut } from "../utils/http/usePut";
 
 const Webcast = () =>{
-    const [updateWebcast, { response }] = usePut(process.env.REACT_APP_API_HOSTNAME+'/api/webcast/62318e6159505e09f183dff4');
+    const [updateWebcast, { response }] = usePut(process.env.REACT_APP_API_HOSTNAME+'/api/webcast/'+process.env.REACT_APP_API_ID_WEBCAST);
     const [stop, setStop]= useState(false);
     const url = useMemo(()=>{
         if(response)
