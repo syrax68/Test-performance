@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
+require('dotenv').config();
 
-const URL = 'mongodb://localhost/testperf';
+const URL = process.env.MONGODB_URL;
 
 exports.connect = async () => {
     const options = {useNewUrlParser: true, useUnifiedTopology: true}
